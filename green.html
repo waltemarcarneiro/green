@@ -1,0 +1,133 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="mobile-web-app-capable" content="yes" />
+
+  <title>Waltemar Carneiro</title>
+  <meta name="description" content="Web Developer | Android Webview" />
+
+  <link rel="manifest" href="manifest.json" />
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="footer.css">
+  
+  <script src="https://kit.fontawesome.com/a7bac8094a.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+  <!-- FAVICON-->
+  <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon-180x180.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png" />
+  <link rel="mask-icon" href="icons/safari-pinned-tab.svg" color="#fff" />
+  <meta name="msapplication-TileColor" content="#fff" />
+  <meta name="theme-color" content="#fff" />
+  <link rel="shortcut icon" href="icons/favicon-32x32.png" />
+
+  <!-- SEO | OG -->
+  <meta property="og:locale" content="pt_BR" />
+  <meta name="keywords" content="Waltemar" />
+  <meta property="og:title" content="Waltemar Carneiro" />
+  <meta property="og:image" content="https://waltemarcarneiro.github.io/green/image/og-image.png" />
+  <meta property='og:type' content='website' />
+  <meta property="og:site_name" content="Waltemar Carneiro" />
+  <meta property="og:description" content="Web Developer | Android Webview" />
+    
+</head>
+<body>
+    
+<div class="menu" id="menu">
+
+        <div class="dev">
+            <div><a href="#"><img src="icons/profile.png" class="logo-menu"></a></div>
+            <div>
+                <strong class="name">Waltemar Carneiro</strong><br>
+                <strong class="status">Web Developer</strong>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <ul>
+                <a href="summer.html" target="mainFrame"><li><i class="fas fa-home menu-item-icon"></i>Summer Hits</li></a>
+                <a href="#"><li><i class="fas fa-newspaper menu-item-icon"></i>Contato</li></a>
+                <a href="downloads/apps.html"><li><i class="fas fa-map menu-item-icon"></i>Aplicativos</li></a>
+                <a href="love.html" target="mainFrame"><li><i class="fas fa-image menu-item-icon"></i>Love Game</li></a>
+                <a href="wjair.html" target="mainFrame"><li><i class="fa-regular fa-user menu-item-icon"></i>Walfredo Jair</li></a>
+                <a href="wjair.html" target="mainFrame"><li><i class="fa-regular fa-user menu-item-icon"></i>Instagran</li></a>
+                <a href="wjair.html" target="mainFrame"><li><i class="fa-regular fa-user menu-item-icon"></i>Intros</li></a>
+                <a href="wjair.html" target="mainFrame"><li><i class="fa-regular fa-user menu-item-icon"></i>Player</li></a>
+                <a href="filmes.html" target="mainFrame"><li><i class="fa-regular fa-user menu-item-icon"></i>Filmes</li></a>
+
+
+            </ul>
+        </div>    
+</div>
+
+        
+<div style="padding:56.25% 0 0 0;position:relative;">
+            <iframe title="home-page" src="summer.html" name="mainFrame" style="position:absolute;top:0;left:0;width:100%;padding-bottom:45px;height:100vh;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; accelerometer"></iframe>
+        </div>
+
+    
+
+<!--start footer-->
+
+<div class="footer-menu">
+        <ul class="icons-container">
+        <li class="icon">
+            <a href="#"><i class="fas fa-bars footer-icon" onclick="toggleMenu()"></i></a>
+            <p>Menu</p>
+        </li>
+        <li class="icon">
+            <a href="bank/bb.html" target="mainFrame"><i class="fa-brands fa-pix"></i></a>
+            <p>Pix</p>
+        </li>
+        <li class="icon">
+            <a href="#"><i class="fas fa-home"></i></a>
+            <p>Home</p>
+        </li>
+        <li class="icon">
+            <a href="#"><i class="fa-solid fa-music"></i></a>
+            <p>Playlist</p>
+        </li>
+        <li class="icon">
+            <a href="#"><i class="fa-solid fa-video"></i></a>
+            <p>Video</p>
+        </li>
+    </ul>
+</div>
+
+<!--end footer-->
+
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById("menu");
+            var menuStyle = window.getComputedStyle(menu);
+            var menuLeft = menuStyle.getPropertyValue("left");
+
+            if (menuLeft === "0px") {
+                // Se o menu está aberto, feche-o
+                menu.style.left = "-250px";
+            } else {
+                // Se o menu está fechado, abra-o
+                menu.style.left = "0";
+            }
+        }
+
+        // Adiciona um ouvinte de eventos para fechar o menu ao clicar fora dele
+        document.addEventListener('click', function (event) {
+            var menu = document.getElementById("menu");
+            var targetElement = event.target; // Elemento clicado
+
+            // Verifica se o clique ocorreu dentro do menu ou no ícone de abertura
+            if (!menu.contains(targetElement) && targetElement.className !== 'fas fa-bars footer-icon') {
+                // Fecha o menu se estiver aberto e o clique ocorreu fora dele
+                menu.style.left = "-250px";
+            }
+        });
+    </script>
+</body>
+</html>
+
