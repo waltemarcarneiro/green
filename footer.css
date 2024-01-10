@@ -31,14 +31,14 @@
     text-align: center;
     font-size: 11px;
     font-family: 'Arial', sans-serif;
-    color: #555;
+    color: #545f7e;
     font-weight: 500;
 }
 .footer-menu li i {
     font-size: 24px;
 }
 .footer-menu a {
-    color: #555;
+    color: #545f7e;
     
 }
 .footer-menu a:focus {
