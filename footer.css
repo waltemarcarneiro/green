@@ -30,15 +30,15 @@
     height: 100%;
     text-align: center;
     font-size: 11px;
-    font-family: 'Arial', sans-serif;
-    color: #545f7e;
+    font-family: 'Inter', sans-serif;
+    color: #05030f;
     font-weight: 500;
 }
 .footer-menu li i {
     font-size: 24px;
 }
 .footer-menu a {
-    color: #545f7e;
+    color: #05030f;
     
 }
 .footer-menu a:focus {

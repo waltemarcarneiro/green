@@ -50,15 +50,15 @@
 
         <div class="menu-item">
             <ul>
-                <a href="summer.html" target="mainFrame"><li><i class="fas fa-home menu-item-icon"></i>Summer Hits</li></a>
-                <a href="#"><li><i class="fas fa-newspaper menu-item-icon"></i>Contato</li></a>
-                <a href="downloads/apps.html"><li><i class="fas fa-map menu-item-icon"></i>Aplicativos</li></a>
-                <a href="love.html" target="mainFrame"><li><i class="fas fa-image menu-item-icon"></i>Love Game</li></a>
-                <a href="wjair.html" target="mainFrame"><li><i class="fa-regular fa-user menu-item-icon"></i>Walfredo Jair</li></a>
-                <a href="wjair.html" target="mainFrame"><li><i class="fa-regular fa-user menu-item-icon"></i>Instagran</li></a>
-                <a href="wjair.html" target="mainFrame"><li><i class="fa-regular fa-user menu-item-icon"></i>Intros</li></a>
-                <a href="wjair.html" target="mainFrame"><li><i class="fa-regular fa-user menu-item-icon"></i>Player</li></a>
-                <a href="filmes.html" target="mainFrame"><li><i class="fa-regular fa-user menu-item-icon"></i>Filmes</li></a>
+                <a href="summer.html" target="mainFrame"><li><i class="fa-solid fa-video menu-item-icon"></i>Summer Hits</li></a>
+                <a href="#"><li><i class="fa-solid fa-address-book menu-item-icon"></i>Contato</li></a>
+                <a href="downloads/apps.html"><li><i class="fa-brands fa-android menu-item-icon"></i>Aplicativos</li></a>
+                <a href="love.html" target="mainFrame"><li><i class="fa-solid fa-video menu-item-icon"></i>Love Game</li></a>
+                <a href="wjair.html" target="mainFrame"><li><i class="fa-solid fa-video menu-item-icon"></i>Walfredo Jair</li></a>
+                <a href="wjair.html" target="mainFrame"><li><i class="fa-brands fa-square-instagram menu-item-icon"></i>Instagran</li></a>
+                <a href="wjair.html" target="mainFrame"><li><i class="fa-solid fa-video menu-item-icon"></i>Intros</li></a>
+                <a href="wjair.html" target="mainFrame"><li><i class="fa-solid fa-music menu-item-icon"></i>Player</li></a>
+                <a href="filmes.html" target="mainFrame"><li><i class="fa-solid fa-film menu-item-icon"></i>Filmes</li></a>
 
 
             </ul>
@@ -77,24 +77,30 @@
 <div class="footer-menu">
         <ul class="icons-container">
         <li class="icon">
-            <a href="#"><i class="fas fa-bars footer-icon" onclick="toggleMenu()"></i></a>
+            <!--<a href="#"><i class="fas fa-bars footer-icon" onclick="toggleMenu()"></i></a>-->
+            <a href="#"><img src="svg/menu.svg" width="24" height="24"  class="svg-menu" class="svg-menu" onclick="toggleMenu()"></a>
             <p>Menu</p>
         </li>
         <li class="icon">
-            <a href="bank/bb.html" target="mainFrame"><i class="fa-brands fa-pix"></i></a>
+            <!--<a href="bank/bb.html" target="mainFrame"><i class="fa-brands fa-pix"></i></a>-->
+            <a href="bank/bb.html" target="mainFrame"><img src="svg/pix.svg" width="24" height="24"></a>
             <p>Pix</p>
         </li>
         <li class="icon">
-            <a href="love.html" target="mainFrame"><i class="fas fa-home"></i></a>
+            <!--<a href="love.html" target="mainFrame"><i class="fas fa-home"></i></a>-->
+            <a href="love.html" target="mainFrame"><img src="svg/home.svg" width="24" height="24"></a>
             <p>Home</p>
         </li>
         <li class="icon">
-            <a href="#"><i class="fa-solid fa-music"></i></a>
+            <!--<a href="#"><i class="fa-solid fa-music"></i></a>-->
+            <a href="wjair.html" target="mainFrame"><img src="svg/playlist.svg" width="24" height="24"></a>
             <p>Playlist</p>
         </li>
         <li class="icon">
-            <a href="#"><i class="fa-solid fa-video"></i></a>
-            <p>Video</p>
+            <!--<a href="#"><i class="fa-solid fa-video"></i></a>-->
+            <a href="filmes.html" target="mainFrame"><img src="svg/film.svg" width="24" height="24"></a>
+
+            <p>Filmes</p>
         </li>
     </ul>
 </div>
@@ -122,11 +128,20 @@
             var targetElement = event.target; // Elemento clicado
 
             // Verifica se o clique ocorreu dentro do menu ou no ícone de abertura
-            if (!menu.contains(targetElement) && targetElement.className !== 'fas fa-bars footer-icon') {
+            if (!menu.contains(targetElement) && targetElement.className !== 'svg-menu') {
                 // Fecha o menu se estiver aberto e o clique ocorreu fora dele
                 menu.style.left = "-250px";
             }
         });
+
+        // Adiciona um ouvinte de eventos para fechar o menu quando um link é clicado
+    var menuLinks = document.querySelectorAll('.menu-item a');
+    menuLinks.forEach(function(link) {
+        link.addEventListener('click', function() {
+            var menu = document.getElementById("menu");
+            menu.style.left = "-250px";
+        });
+    });
     </script>
 </body>
 </html>

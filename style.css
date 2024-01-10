@@ -5,8 +5,8 @@
 }
 
 body {
-    font-family: 'Open Sans', sans-serif;
-    color: #545f7e;
+    font-family: 'Inter', sans-serif;
+    color: #05030f;
 }
 
 .menu {
@@ -58,7 +58,7 @@ body {
     font-size: 24px;
     font-weight: bold;
     margin-bottom: 10px;
-    font-family: 'Open Sans', sans-serif;
+    
 }
 
 .content-text {
@@ -76,14 +76,14 @@ body {
 .menu-item li {
     padding: 10px 0px 10px 10px;
     border-bottom: 1px solid #eee;
-    color: #545f7e;
+    color: #05030f;
     list-style: none;
     font-family: 'Inter', sans-serif;
     font-weight: 500;
 }
 
 .menu-item li i {
-    color: #67bb00;
+    color: #57bb00;
 }
 
 a {
@@ -104,14 +104,14 @@ a {
 .dev .name {
     text-shadow: 0px 1px #fff;
     font-weight: 600;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-size: 16px;
 }
 
 .dev .status {
     text-shadow: 0px 1px #fff;
-    font-weight: 600;
-    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    font-family: 'Inter', sans-serif;
     font-size: 12px;
 }
 
