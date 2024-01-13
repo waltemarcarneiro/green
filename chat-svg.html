@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SVG Clicável</title>
+  <style>
+    /* Estilo padrão do ícone SVG */
+    .icone-svg {
+      width: 50px; /* Ajuste conforme necessário */
+      height: 50px; /* Ajuste conforme necessário */
+      fill: #000; /* Cor padrão */
+      transition: fill 0.3s ease; /* Adiciona uma transição suave para a mudança de cor */
+    }
+
+    /* Estilo do ícone SVG quando clicado */
+    .icone-svg.clicado {
+      fill: #ff0000; /* Cor quando clicado */
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Ícone SVG clicável -->
+  <div class="icone-svg" onclick="mudarCor(this)">
+    <!-- Substitua o conteúdo abaixo pelo caminho do seu arquivo SVG -->
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+      <use href="svg/lock.svg"></use>
+    </svg>
+  </div>
+
+  <!-- Se precisar de mais ícones, pode replicar o bloco acima -->
+
+  <script>
+    function mudarCor(elemento) {
+      // Adiciona ou remove a classe 'clicado' para mudar a cor do ícone
+      elemento.classList.toggle('clicado');
+    }
+  </script>
+
+</body>
+</html>
