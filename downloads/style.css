@@ -1,21 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
-
 *{
     margin: 0;
     padding: 0;
 }
 body{
-    color: #334155;
+    color: #252e48;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+    background-color: #f2f2f2;
 }
 h1, h2, h3, h4{
-    color: #0f172a;
+    color: #252e48;
 }
 
 header button{
     background-color: transparent;
-    color: #0f172a;
+    color: #596671;
     border: none;
     margin: 0;
     padding: 0;
@@ -59,13 +57,6 @@ header h2{
     margin-left: auto;
   }
 
-
-        body {
-            font-family: 'Inter', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f2f2f2;
-        }
         .app-list {
             max-width: 600px;
             margin: 20px auto;
@@ -83,8 +74,8 @@ header h2{
             border-bottom: 1px dashed #ccc;
         }
         .app-image {
-            width: 70px;
-            height: 70px;
+            width: 40px;
+            height: 40px;
             margin-right: 20px;
             border-radius: 10px;
 
@@ -93,7 +84,6 @@ header h2{
             flex: 1;
         }
         .app-name {
-            font-family: 'Nunito Sans',sans-serif;
             font-size: 16px;
             font-weight: 600;
         }
@@ -101,7 +91,7 @@ header h2{
             font-size: 14px;
             margin-top: 5px;
             text-align: justify;
-            color: #334155;
+            color: #596671;
             font-weight: 500;
         }
         .app-size {
@@ -119,10 +109,10 @@ header h2{
         }
         .app-link:hover {
             text-decoration: underline;
-            color: orange;
+            color: #57bb00;
         }
         button a{
-            background: #e77000;
+            background: #57bb00;
             color: white;
             width: 90px;
             padding: 3px 7px;
@@ -138,6 +128,8 @@ header h2{
     display: flex;
     justify-content: space-between;
 }
+
+.search-bar {}
 .search-bar button{
     background: #75bb00;
     color: #fff;
