@@ -1,4 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap'); @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap'); @import url('https://fonts.googleapis.com/css2?family=Open Sans:wght@400;500;600;700&display=swap'); @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,400;6..12,500;6..12,600;6..12,700&display=swap'); @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&display=swap'); @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&display=swap'); * {
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open Sans:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -6,14 +12,14 @@
 
 body {
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
-    color: #05030f;
+    color: #050505;
 
 }
 .button-link{
     display: inline-block;
       padding: 5px 10px;
       background: #fff;
-      color: #05030f;
+      color: #050505;
       text-decoration: none;
       border-radius: 5px;
       font-size: 12px;
@@ -27,7 +33,7 @@ body {
     left: -250px;
     top: 0;
     width: 250px;
-    height: calc(100% - 50px);
+    height: calc(100% - 45px);
     background: #fff;
     transition: 0.5s;
     display: flex;
@@ -77,7 +83,6 @@ body {
 .content-text {
     font-size: 16px;
     text-align: justify;
-    font-family: 'Inter', sans-serif;
     font-weight: 500;
     line-height: 1.4;
 }
@@ -89,12 +94,15 @@ body {
 .menu-item li {
     padding: 10px 0px 10px 10px;
     border-bottom: 1px solid #eee;
-    color: #252e48;
+    color: #050505;
     list-style: none;
-    font-family: 'Inter', sans-serif;
-    font-weight: 500;
+    font-weight: 400;
+    font-size: 1.1em;
 }
-
+.menu-item li:hover{
+    background: #f0f2f5;
+    
+}
 .menu-item li i {
     color: #57bb00;
 }
@@ -111,20 +119,19 @@ a {
     align-items: center;
     text-align: left;
     padding: 10px 0px 10px 10px;
-    background: #f5f5f5;
+    background: #f0f2f5;
 }
 
 .dev .name {
     text-shadow: 0px 1px #fff;
-    font-weight: 500;
-    font-family: 'Inter', sans-serif;
+    font-weight: 600;
     font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .dev .status {
     text-shadow: 0px 1px #fff;
     font-weight: 500;
-    font-family: 'Inter', sans-serif;
     font-size: 12px;
 }
 
@@ -151,7 +158,7 @@ a {
   position: fixed;
   bottom: 0px;
   width: 100%;
-  height: 50px;
+  height: 45px;
   background-color: #ffffff;
   z-index: 998;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
@@ -160,10 +167,9 @@ a {
 .footer-menu ul {
     display: inline-block;
     width: 100%;
-    padding: 7px 0px 0 0px;
+    padding: 3px 0px 0px 0px;
     margin: 0px;
     color: #57bb00;
-
     -webkit-tap-highlight-color: transparent;
     tap-highlight-color: transparent;
     user-select: none;
@@ -174,10 +180,12 @@ a {
     display: inline-block;
     height: 100%;
     text-align: center;
-    font-size: 11px;
-    font-family: 'Inter', sans-serif;
-    color: #05030f;
-    font-weight: 500;
+    color: #050505;
+    font-weight: 400;
+    font-size: 0.7em; 
+}
+.footer-menu li p{
+    margin-top: 3px;
 }
 .footer-menu li i {
     font-size: 24px;
@@ -191,7 +199,7 @@ a {
 }
 /* SVG FOOTER CONFIG */
 svg{
-    fill: #1E3050;
+    fill: #050505;
     transition: fill 0.3s ease;
 }
 a:active svg{
