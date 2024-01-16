@@ -1,143 +1,139 @@
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="apple-mobile-web-app-capable" content="yes" />
-  <meta name="mobile-web-app-capable" content="yes" />
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <meta name="apple-mobile-web-app-capable" content="yes"/>
+        <meta name="mobile-web-app-capable" content="yes"/>
+        <title>Perfil</title>
+        <meta name="description" content="Web Developer | Android Webview"/>
+        <link rel="manifest" href="manifest.json"/>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/a7bac8094a.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <!-- FAVICON-->
+        <link rel="apple-touch-icon" sizes="180x180" href="icons/icon180.png"/>
+        <link rel="icon" type="image/png" sizes="32x32" href="icons/icon32.png"/>
+        <link rel="icon" type="image/png" sizes="16x16" href="icons/icon16.png"/>
+        <link rel="mask-icon" href="icons/safari-pinned-tab.svg" color="#ffffff"/>
+        <meta name="msapplication-TileColor" content="#ffffff"/>
+        <meta name="theme-color" content="#ffffff"/>
+        <link rel="shortcut icon" href="icons/icon32.png"/>
+        <!-- SEO | OG -->
+        <meta property="og:locale" content="pt_BR"/>
+        <meta name="keywords" content="Waltemar"/>
+        <meta property="og:title" content="Waltemar Carneiro"/>
+        <meta property="og:image" content="https://waltemarcarneiro.github.io/green/icons/ogimage.png"/>
+        <meta property='og:type' content='website'/>
+        <meta property="og:site_name" content="Waltemar Carneiro"/>
+        <meta property="og:description" content="Web Developer | Android Webview"/>
+        <style>
+            body {
+                background: #fff;
+                font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+            }
 
-  <title>Perfil</title>
-  <meta name="description" content="Web Developer | Android Webview" />
+            header {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 10px;
+                background: #fff;
+                position: fixed;
+                top: 0;
+                left: 0;
+                right: 0;
+                height: 50px;
+                /*box-shadow: 0px 1px 5px 2px rgba(238,238,238,1);*/
+                border-bottom: 1px solid #eee;
+            }
 
-  <link rel="manifest" href="manifest.json" />
+            header a, h3, strong {
+                -webkit-tap-highlight-color: transparent;
+                tap-highlight-color: transparent;
+                user-select: none;
+                color: #050505;
+            }
+            header i {
+                font-size: 20px;
 
-  <link rel="stylesheet" href="style.css">
-  
-  <script src="https://kit.fontawesome.com/a7bac8094a.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+            }
 
-  <!-- FAVICON-->
-<link rel="apple-touch-icon" sizes="180x180" href="icons/icon180.png"/>
-<link rel="icon" type="image/png" sizes="32x32" href="icons/icon32.png"/>
-<link rel="icon" type="image/png" sizes="16x16" href="icons/icon16.png"/>
-<link rel="mask-icon" href="icons/safari-pinned-tab.svg" color="#ffffff"/>
-<meta name="msapplication-TileColor" content="#ffffff"/>
-<meta name="theme-color" content="#ffffff"/>
-<link rel="shortcut icon" href="icons/icon32.png"/>
+            profile {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-top: 70px;
+            }
 
-  <!-- SEO | OG -->
-  <meta property="og:locale" content="pt_BR" />
-  <meta name="keywords" content="Waltemar" />
-  <meta property="og:title" content="Waltemar Carneiro" />
-  <meta property="og:image" content="https://waltemarcarneiro.github.io/green/icons/ogimage.png" />
-  <meta property='og:type' content='website' />
-  <meta property="og:site_name" content="Waltemar Carneiro" />
-  <meta property="og:description" content="Web Developer | Android Webview" />
+            .profile-right {
+                display: flex;
+                padding: 0px 20px 30 0px;
+                justify-content: space-between;
+                line-height: 1.2;
+                text-align: center;
+            }
 
-  <style>
-    body{
-        background: #fff;
-        color: #596671;
-       font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
-    }
-      header{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 10px;
-        background: #fff;
-        position: fixed;
-        
-        top: 0;
-    left: 0;
-    right: 0;
-    height: 50px;
-    box-shadow: 0px 1px 4px 0px rgba(219,219,219,1);
-      }
-      header i{
-        font-size: 20px;
-      }
-      profile{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        margin-top: 70px;
+            .right-date {
+                margin-left: 20px;
+            }
 
-      }
-      .profile-right{
-        display: flex;
-        padding: 0px 20px 30 0px;
-        justify-content: space-between;
-        
-        line-height: 1.2;
-        text-align: center;
-        
-      }
-      .right-date{
-        margin-left: 20px;
-        
-      }
-      .right-date p{
-        color: grey;
-      }
-      .photo{
-        
-        height: 80px;
-        width: 80px;
-        align-items: center;
-        text-align: left;
-        margin-left: 10px;
-}
-    .btn{
-    position: absolute;
-    justify-content: space-between;
-    display: flex;
-    align-items: center;
-    text-align: right;
+            .photo {
+                height: 80px;
+                width: 80px;
+                align-items: center;
+                text-align: left;
+                margin-left: 10px;
+            }
+
+            .btn {
+                position: absolute;
+                justify-content: space-between;
+                display: flex;
+                align-items: center;
+                text-align: right;
+                right: 10px;
+                margin-top: 50px;
+                z-index: -1;
+            }
+
+            button {
+                background: #f8f8f8;
+                padding: 5px 20px;
+                border: 1px solid #ccc;
+                border-radius: 7px;
+                margin-left: 10px;
+                -webkit-tap-highlight-color: transparent;
+                tap-highlight-color: transparent;
+                user-select: none;
+            }
+
+            .content {
+                padding: 5px;
+            }
+
+            .content p {
+                text-align: justify;
+                line-height: 1.4;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div>
+                <a href="javascript: history.go(-1)">
+                    <i class="fa-solid fa-arrow-left"></i>
+                </a>
+            </div>
+            <div>
+                <a href="profile.html" id="shareLink"><i class="fa-regular fa-share-from-square" ></i></a>
+            </div>
+        </header>
+        ''
+
     
-    right: 10px;
-    margin-top: 50px;
-    z-index: -1;
-    }
-    button{
-    background: #f8f8f8;
-    padding: 5px 20px;
-    border: 1px solid #ccc;
-    border-radius: 7px;
-    margin-left: 10px;
-
-    -webkit-tap-highlight-color: transparent;
-    tap-highlight-color: transparent;
-    user-select: none;
-
-    }
-    header a, h3, strong{
-    color: #252e48;
-    -webkit-tap-highlight-color: transparent;
-    tap-highlight-color: transparent;
-    user-select: none;
-    }
-    .content{
-        padding: 5px;
-    }
-    .content p{
-        text-align: justify;
-        line-height: 1.4;
-    }
-  </style>
-    
-</head>
-<body>
-    
-    <header>
-        <div><a href="javascript: history.go(-1)"><i class="fa-solid fa-arrow-left"></i></a></div>
-       
-        <div><i class="fa-regular fa-share-from-square"></i></div>
-    </header>''
-
-    <profile>
-
-        <img class="photo" src="image/photo.png">
+        <profile>
+            <img class="photo" src="image/photo.png">
             <div class="profile-right">
                 <div class="right-date">
                     <h3>361</h3>
@@ -151,33 +147,58 @@
                     <h3>957</h3>
                     <p>Folowing</p>
                 </div>
-
             </div>
-
-       <div class="btn">
-        <button>Promotions</button>
-        <button>Edit Profile</button>
-       </div>  
-    </profile>
-    <div class="content">
-        <strong>Waltemar Carneiro</strong>
-        <p>Web Developer</p><br>
-        <p>
-            Mais no canal do Youtube.
+            <div class="btn">
+                <button>Promotions</button>
+                <button>Edit Profile</button>
+            </div>
+        </profile>
+        <div class="content">
+            <strong>Waltemar Carneiro</strong>
+            <p>Web Developer</p>
+            <br>
+            <p>Mais no canal do Youtube.
         </p>
+        </div>
+        <iframe width="100%" height="250" src="https://www.youtube.com/embed/0TZ6QxzahEA?si=yAgUajtqcfJ5_MnU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <div class="content">
+            <p>Esta playlist apresenta todos os nossos Deep House, Vocal House, Nu Disco, Chillout. Se você precisa de algumas sensações de verão, música para relaxar ou estudar ou apenas quer se divertir...</p>
+        </div>
+        <video width="100%" height="" controls src="thereal.mp4" poster="media/cover.jpg">
+            Desculpe, seu navegador não suporta vídeos incorporados, mas não se preocupe, você pode
+  <a href="https://archive.org/details/BigBuckBunny_124">baixar</a>
+            e assista com seu reprodutor de vídeo favorito!
+            
+        </video>
 
+        <!--SCRIPT SHARE PROFILE-->
+        <script>
+            
+               // Adicione um listener ao link de compartilhamento
+        document.getElementById('shareLink').addEventListener('click', function (event) {
+            event.preventDefault(); // Prevenir comportamento padrão do link
 
-    </div>
+            // Adicione o código de compartilhamento aqui
+            const shareUrl = '/green.html?pagina=profile.html';
+            const shareTitle = 'Perfil de Waltemar Carneiro';
+            const shareContent = 'Web Developer';
 
-    
-<iframe width="100%" height="250" src="https://www.youtube.com/embed/0TZ6QxzahEA?si=yAgUajtqcfJ5_MnU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-   
-<div class="content">
-        <p>Esta playlist apresenta todos os nossos Deep House, Vocal House, Nu Disco, Chillout. Se você precisa de algumas sensações de verão, música para relaxar ou estudar ou apenas quer se divertir...</p>
+            if (navigator.share) {
+                navigator.share({
+                    title: shareTitle,
+                    text: shareContent,
+                    url: shareUrl
+                }).then(() => {
+                    console.log('Página compartilhada com sucesso!');
+                }).catch((error) => {
+                    console.error('Erro ao compartilhar a página:', error);
+                });
+            } else {
+                console.log('Compartilhamento não suportado pelo navegador.');
+            }
+        });
 
-
-    </div>
-
-</body>
+        </script>
+ 
+    </body>
 </html>
-

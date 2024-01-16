@@ -40,13 +40,12 @@
 <div class="menu" id="menu">
 
         <div class="dev menu-item" style="margin: 0;">
-            <div><a href="profile.html" target="mainFrame"><img src="icons/profile.png" class="logo-menu"></a></div>
-            <div>
+            <div><a href="profile.html" id="profile" target="mainFrame"><img src="icons/profile.png" class="logo-menu"></a></div>
+            <div style="margin-right: 10px;">
                 <strong class="name">Waltemar Carneiro</strong><br>
                 <strong class="status">Web Developer</strong><br>
-                <a href="profile.html" target="mainFrame"><i class="fa-solid fa-circle-info"></i></a>
-          
             </div>
+            <a href="https://api.whatsapp.com/send?phone=559293623739&text=%F0%9F%98%80%20Ol%C3%A1%2C%20estou%20com%20d%C3%BAvidas!" target="_parent"><i class="fa-brands fa-whatsapp" style="color: #050505; font-size: 24px;"></i></a>
         </div>
 
         <div class="menu-item">
@@ -62,12 +61,27 @@
         </div>    
 </div>
 
-        
-<div style="padding:56.25% 0 0 0;position:relative;">
-            <iframe title="home-page" src="love.html" name="mainFrame" style="position:absolute;top:0;left:0;width:100%;padding-bottom:45px;height:100vh;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; accelerometer"></iframe>
+        <!-- START IFRAME -->
+
+        <div>
+
+            <iframe id="meuIframe" title="home-page" src="love.html" name="mainFrame" style="position:absolute;top:0;left:0;width:100%;padding-bottom:45px;height:100vh;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; accelerometer">
+            </iframe>
+
         </div>
 
+ <!-- START SCRIPT DO IFRAME -->           
+
+<script>
+    // Obtém o parâmetro 'pagina' da URL
+    const parametroPagina = new URLSearchParams(window.location.search).get('pagina');
     
+    // Define a página padrão ou a página fornecida pelo parâmetro
+    const pagina = parametroPagina || 'love.html';
+
+    // Atualiza o src do iframe
+    document.getElementById('meuIframe').src = pagina;
+  </script>
 
 <!--start footer-->
 
@@ -162,6 +176,10 @@ viewBox="0 0 48.48 42.08"
         });
     });
     </script>
+
+
+
+
 </body>
 </html>
 
