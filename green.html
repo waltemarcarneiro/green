@@ -44,8 +44,11 @@
             <div style="margin-right: 10px;">
                 <strong class="name">Waltemar Carneiro</strong><br>
                 <strong class="status">Web Developer</strong><br>
+                <a href="https://waltemarcarneiro.github.io/green/green.html?pagina=profile.html" target="_parent">
+                <button class="profile-button">Perfil</button>
+                </a>
             </div>
-            <a href="https://api.whatsapp.com/send?phone=559293623739&text=%F0%9F%98%80%20Ol%C3%A1%2C%20estou%20com%20d%C3%BAvidas!" target="_parent"><i class="fa-brands fa-whatsapp" style="color: #050505; font-size: 24px;"></i></a>
+            <a href="https://api.whatsapp.com/send?phone=559293623739&text=%F0%9F%98%80%20Ol%C3%A1%2C%20estou%20com%20d%C3%BAvidas!" target="_parent"><i class="fa-brands fa-whatsapp"></i></a>
         </div>
 
         <div class="menu-item">
@@ -148,7 +151,7 @@ viewBox="0 0 48.48 42.08"
 
             if (menuLeft === "0px") {
                 // Se o menu está aberto, feche-o
-                menu.style.left = "-250px";
+                menu.style.left = "-300px";
             } else {
                 // Se o menu está fechado, abra-o
                 menu.style.left = "0";
@@ -163,7 +166,7 @@ viewBox="0 0 48.48 42.08"
             // Verifica se o clique ocorreu dentro do menu ou no ícone de abertura
             if (!menu.contains(targetElement) && targetElement.className !== 'svg-menu') {
                 // Fecha o menu se estiver aberto e o clique ocorreu fora dele
-                menu.style.left = "-250px";
+                menu.style.left = "-300px";
             }
         });
 
@@ -172,7 +175,7 @@ viewBox="0 0 48.48 42.08"
     menuLinks.forEach(function(link) {
         link.addEventListener('click', function() {
             var menu = document.getElementById("menu");
-            menu.style.left = "-250px";
+            menu.style.left = "-300px";
         });
     });
     </script>
