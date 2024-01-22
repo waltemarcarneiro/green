@@ -107,7 +107,7 @@ p{
     
 }
 .menu-item li i {
-    color: #57bb00;
+    color: #050505;
 }
 
 a {
@@ -173,7 +173,7 @@ a {
     width: 100%;
     padding: 3px 0px 0px 0px;
     margin: 0px;
-    color: #57bb00;
+    color: #050505;
     -webkit-tap-highlight-color: transparent;
     tap-highlight-color: transparent;
     user-select: none;
@@ -196,7 +196,7 @@ a {
     font-size: 24px;
 }
 .footer-menu a {
-    color: #05030f;
+    color: #050505;
     
 }
 .footer-menu a:focus {
