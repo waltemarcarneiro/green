@@ -13,7 +13,7 @@
         <link rel="icon" type="image/png" sizes="16x16" href="icons/icon16.png"/>
         <link rel="mask-icon" href="icons/safari-pinned-tab.svg" color="#111111"/>
         <meta name="msapplication-TileColor" content="#111111"/>
-        <meta name="theme-color" content="#111111"/>
+        
         <link rel="shortcut icon" href="icons/icon32.png"/>
         <!-- SEO | OG -->
         <meta property="og:locale" content="pt_BR"/>
@@ -24,12 +24,8 @@
         <meta property="og:site_name" content="Waltemar Carneiro"/>
         <meta property='og:type' content='website'/>
         <style>
-            @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
-            @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-            @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
-            @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,400;6..12,500;6..12,600;6..12,700&display=swap');
-            @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&display=swap');
-            @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&display=swap');
+
+
             * {
                 margin: 0;
                 padding: 0;
@@ -46,12 +42,17 @@
             i {
                 color: #24C091;
             }
+            .fa-circle-xmark{
+                font-size: 30px;
+                color: #999;
+                
+            }
 
             body, html {
-                font-family: 'Roboto', sans-serif;
+                font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
                 margin: 0;
                 padding: 0;
-                background: #000;
+                background: #0f0f0f;
                 color: #fff;
             }
 
@@ -64,25 +65,12 @@
                 height: 100%;
                 object-fit: cover;
 
-
                 -webkit-tap-highlight-color: transparent;
                 tap-highlight-color: transparent;
                 user-select: none;
                 text-decoration: none;
             }
 
-
-            /* Cobertura sobre o vídeo desativado */
-            /.video-overlay {
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                background-color: rgba(0, 0, 0, 0.4);
-
-                /* Cor semi-transparente (aqui é preto com 40% de opacidade) */
-            }
 
             /* Estilos para centralizar o conteúdo de texto */
             .centered-content {
@@ -120,18 +108,24 @@
             .icons {
                 position: fixed;
                 bottom: 100px;
-                right: 5px;
+                right: 10px;
                 z-index: 1;
                 display: flex;
                 flex-direction: column;
 
 
+
+
             }
              .icons img {
-                padding-bottom: 5px;
-                
+                margin-bottom: 10px;
+                width: 40px;
+                height: 40px;
+                border-radius: 100px;
+                border:2px solid #fff;
+                padding: 2px;
+            
             }
-
             .marquee-container {
                 overflow: hidden;
                 white-space: nowrap;
@@ -141,7 +135,7 @@
             .marquee-content {
                 display: inline-block;
                 animation: marquee 15s linear infinite;
-                font-size: 18px;
+                font-size: 14px;
                 width: 90%;
             }
 
@@ -156,13 +150,15 @@
             }
 
             h1 {
-                font-size: 19px;
+                font-size: 20px;
                 text-align: left;
                 vertical-align: top;
-                font-family: 'Google Sans',Roboto,Arial,sans-serif;
                 font-weight: 600;
             }
-
+            p{
+                color: #555;
+                font-size: 16px;
+            }
             .logo-popup {
                 display: flex;
                 align-items: center;
@@ -171,26 +167,27 @@
             .logo-popup img {
                 margin-right: 10px;
                 text-align: left;
-                height: 60px;
-                width: 60px;
+                height: 50px;
+                width: 50px;
             }
             .banner-header{
                               
                 width: 250px;
                 height: 120px;
-                
-                
             }
+
         </style>
         
     </head>
     <body>
         <script src="bank/sweetalert2.all.js"></script>
+
         <div class="logo">
             <img src="image/logo-header.png" alt="logo" width="150">
         </div>
+        <!-- ICONS -->
         <div class="icons">
-            <a href="https://bit.ly/wcarneiro" target="_blank">
+            <a href="green.html?pagina=profile.html" target="_parent">
                 <img src="image/up-video/perfil.png" alt="perfil" width="50">
             </a>
             
@@ -198,8 +195,8 @@
                 <img src="image/up-video/share.png" alt="share" width="50">
             </a>
             
-            <a href="https://api.whatsapp.com/send?text=Momento+Summer+Hits%21https://bit.ly/wcg-summer" target="_blank">
-                <img src="image/up-video/whatsapp.png" alt="whatsapp" width="50">
+            <a href="https://bit.ly/LoveSongsApp" target="_blank">
+                <img src="image/up-video/app.png" alt="App" width="50">
             </a>
             
             <a href="#" id="pixLink">
@@ -209,10 +206,7 @@
         
         <iframe id="meuVideo" width="100%" height="" src="https://www.youtube.com/embed/Cz18kmKM8Lo?list=PLX_YaKXOr1s4G31MK1LOv-w3VjDwo6Bky" frameborder="0" allowfullscreen></iframe>
 
-        <!-- Cobertura semi-transparente sobre o vídeo -->
-        <div class="video-overlay" onclick="playVideo()"></div>
-
-        <!-- Div superior -->
+       <!-- Div superior -->
 
         <div class="top-content">
             
@@ -225,25 +219,7 @@
                 <div class="marquee-content">Summer Mega Hits 2024</div>
             </div>
         </div>
-        <!-- start script overlay sobre o video-->
-        <script>
-    document.addEventListener("DOMContentLoaded", function () {
-        document.querySelector('.video-overlay').addEventListener('click', function () {
-            playVideo();
-        });
-    });
 
-    function playVideo() {
-        var meuVideo = document.getElementById('meuVideo');
-        meuVideo.src = "https://www.youtube.com/embed/Cz18kmKM8Lo?list=PLX_YaKXOr1s4G31MK1LOv-w3VjDwo6Bky&autoplay=1";
-        meuVideo.addEventListener('loadeddata', function () {
-            meuVideo.volume = 1.0;
-        });
-        document.querySelector('.video-overlay').style.display = 'none';
-    }
-</script>
-
-        <!-- end script overlay sobre o video-->
 
         <script>
             // Adicione um listener ao link de compartilhamento
@@ -278,23 +254,28 @@
                 <div>
                     <div class="logo-popup">
                         <img src="icons/logo-rounded.png">
-                        <h1><i class="fa-regular fa-heart"></i> Apoie o desenvolvedor com uma contribuição.</h1>
+                        <h1>
+                            <i class="fa-regular fa-heart"></i> Apoie o desenvolvedor.
+                        </h1>
                     </div>
-                    <p style="text-align: justify; margin-top: 10px; color: #545f7e; border-bottom: 1px solid #cfe1fd; padding-bottom: 10px;">
-                        <strong style="font-size: 12px; font-weight:500;">5.0</strong> <img src="https://play-lh.googleusercontent.com/_KiRouu_G6J_2jwePzQ_i5_FMc_SVKT3mI7d7KKq9zca-Nr8bj2bPasawLvk6ajzASQS-90a8hYXeAh0lQ=w48-h16-rw" height="12"> Aponte a câmera do seu celular para o QRCode, ou use os botões "<b>Copiar Chave</b>" ou "<b>Copia e Cola.</b>"
-                        <br><br><strong style="color: #E77000; font-weight: 500; font-style: italic;">LEMBRE-SE: Sua doação é voluntária.</strong>
+                    <p>
+                        <strong>5.0 </strong><img src="https://play-lh.googleusercontent.com/_KiRouu_G6J_2jwePzQ_i5_FMc_SVKT3mI7d7KKq9zca-Nr8bj2bPasawLvk6ajzASQS-90a8hYXeAh0lQ=w48-h16-rw" height="12"> Aponte a câmera do seu celular para o QRCode, ou use os botões "<b>Copiar Chave</b>" ou "<b>Copia e Cola.</b>"
+                        <br>
                     </p>
 
                     <div align="center" class="qrcode">
-                        <img src="bank/image/qrcode-bb.png" height="100" alt="qrcode">
+                        <img src="bank/image/qrcode-bb.png" height="80" alt="qrcode">
+
                     </div>
+                    <p>Sua doação é voluntária.</p>
                     <div class="btn">
                         <button class="key1" onclick="copyText('pix')">COPIAR CHAVE</button>
                         <button class="key2" onclick="copyText('code')">COPIA e COLA</button>
                     </div>
                 </div>
-                <div>
-                    <button class="close-button" onclick="closePopup()">Fechar</button>
+                <div align="center">
+                    <i class="fa-regular fa-circle-xmark" onclick="closePopup()"></i>
+                    
                 </div>
                 <span id="pix" class="chave">aa8b3fd0-0c76-422f-9f3a-844bd7f6b627</span>
                 <span id="code" class="chave">00020126770014br.gov.bcb.pix0136aa8b3fd0-0c76-422f-9f3a-844bd7f6b6270215Solicitacao Pix5204000053039865802BR5922WALTEMAR LIMA CARNEIRO6006MANAUS62290525l0mRiVkLmDEtcAVLaD8SUuLO46304BD9F</span>
@@ -359,6 +340,7 @@
                 display: none;
                 position: fixed;
                 bottom: 0;
+                padding-bottom: 50px;
                 left: 0;
                 width: 100%;
                 background-color: #fff;
